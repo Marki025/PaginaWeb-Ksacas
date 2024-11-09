@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+*{
+    box-sizing: border-box; 
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(252, 246, 212);
+    font-family: "Nunito", sans-serif;
+}
+.header{
+ background-color: rgb(69, 90, 74);   
+ display: flex;
+ justify-content: space-between;
+align-items: center;
+height: 5.7em;
+padding: 5px 10%;
+}
+.header .logo img{
+height: 125px;
+width: auto;
+}
+.header .links-nav{
+    list-style: none;
+    
+}
+.header .links-nav li{
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+.header .links-nav li:hover{
+    transform: scale(1.1);
+
+
+}
+.header .links-nav a{
+ font-size: 700;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ transition: all 0.3s ease 0s;
+}
+.header .links-nav a:hover{
+    color: rgb(202, 165, 1);
+   
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: black;
+    padding: 10px 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+}
+.header .btn button:hover{
+    background-color: azure;
+    color: rgb(202, 165, 1);
+    transform: scale(1.1);
+
+}
+
+.tit_prod{
+    background-color: chocolate;
+    padding: 1em;
+    text-align: center;
+}
+.tit-index{
+    background-color: #E5CDA3;
+    padding: 1em;
+    text-align: center;
+
+}
+.tit-casmasvend{
+    background-color: #FAD4C0;
+    padding: 3em;
+    text-align: center;
+    border-top: solid;
+    border-bottom: solid;
+    font-weight: 700;
+}
+.texto-sn{
+    min-height: 75vh;
+    width: 85%;
+    padding: 5px;
+    margin-left: 8%;
+}
+.container-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(251, 255, 201);
+    flex-wrap: wrap;
+
+}
+.card ,.card-arg{
+    position: relative;
+    width: 20em;
+    height: 26em;
+    margin: 15px;
+    background: aliceblue;
+    border: solid;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+.card-res{
+    position: relative;
+    width: 16em;
+    height: 20em;
+    margin: 15px;
+    background: rgb(255, 244, 182);
+    border: solid;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #be0000;
+    transform:skewY(310deg);
+    transition: 500ms;
+}
+
+.card-arg::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #3dd2ff;
+    transform:skewY(310deg);
+    transition: 500ms;
+}
+
+.card:hover::before , .card-arg:hover::before{
+    top:-70%;
+    transform: skewY(360deg);
+}
+
+.card .img-box, .card-arg .img-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.card .content-box, .card-arg .content-box{
+    position: relative;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .img-box img , .card-arg .img-box img{
+    height: 18.75em;
+    width: auto;
+}
+#enlinea{
+    display: inline;
+    align-items: flex-start;
+    margin-top: none;
+}
+#margins{
+    margin: 1em;
+}
+#svg-res{
+    width: 60px;
+    height: 60px;
+    padding-top: 1em;
+}
+
+
+.footer{
+    position: relative;   
+    width: 100%;
+    background-color: rgb(69, 90, 74);   
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+       
+}
+.icons-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin:10px,5px;
+    flex-wrap: wrap;
+}
+.elem-icon{
+list-style: none;
+}
+.icon{
+    color: white;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 500ms;
+}
+.icon :hover{
+ transform: translateY(-10px);
+}
+
+.form form{
+    background-color: white;
+}
+
+.form {
+    max-width: 30em;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.form form div{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    margin-bottom: 5px;
+}
+.form input, #msj{
+    padding: 8px;
+    margin:8px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-family: "Nunito", sans-serif;
+}
+.form button{
+    background-color: #545155;
+    color: black;
+    border-radius: 5px;
+    max-width: 50vw;
+    margin: auto;
+    display: block;
+    padding: 5px 10px;
+    
+}
+.form button:hover{
+    background-color: rgb(134, 198, 255);
+    transform: scale(1.1);
+}
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 80vw;
+    margin: 50px auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* background-color: #e6b6b6; */
+    background-color:(252, 246, 211);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#img-index {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#desc-prod {
+    font-size: 1em;
+    text-align: justify;
+    padding: 10px;
+    width: 100%; 
+    max-width: 700px;
+}
+
+#desc-prod ul {
+    padding-left: 20px; 
+    margin: 0; 
+    width: 100%; 
+}
+
+#desc-prod li {
+    margin-bottom: 10px; 
+    width: 100%; 
+}
+
+
+
+@media (max-width: 475px){
+    .header{
+    background-color: rgb(69, 90, 74);   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8em;
+    padding: 5px 5%;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+    }
+
+    .header .btn button{
+        font-weight:400;
+        color: black;
+        padding: 5px 5vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 40px;
+        transition: all 0.3s ease 0s;
+        max-width: 100%;
+    }
+
+    .main-index {
+        max-width: 95vw;
+        padding: 10px;
+    }
+
+}
+
+
+#desc-prod{
+    max-width: 50%;
+}
